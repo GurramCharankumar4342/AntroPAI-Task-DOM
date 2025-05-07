@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM elements</title>
+</head>
+<body>
+    <div id="heading">Hi this is charan</div>
+    <div class="heading2">Hi this is <b>charan kumar</b></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, id!</p>
+    <input type="checkbox" name="check" id="">checkbox
+
+    <div class="heading2">
+        <h1>heading1</h1>
+        <h1>heading2</h1>
+    </div>
+    <div id="example">
+        Hello <b>World</b>!
+      </div>
+      
+</body>
+<script>
+    let h1=document.getElementById("heading")
+    console.log(h1)
+
+let arr1=document.getElementsByClassName(".heading2")
+console.log(arr1)
+
+let para1=document.getElementsByTagName("p")
+console.log(para1)
+
+let checkk=document.getElementsByName("check")
+    console.log(checkk)
+
+    let paragraph=document.querySelectorAll(".heading2")
+   console.log(paragraph);
+
+   let changingContent=document.getElementById("heading").innerHTML
+   console.log(changingContent)
+
+   
+   let changingContent2=document.getElementById("heading").innerText
+   console.log(changingContent2);
+
+ 
+
+  console.log(document.getElementById("example").innerHTML);
+  console.log(document.getElementById("example").innerText);
+
+
+</script>
+</html>
